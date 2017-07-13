@@ -1,55 +1,108 @@
-<!DOCTYPE html>
+
+
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Accounting</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/w3.css">
-    </head>
-    <body>
+<head>
+  <title>
+    JSS InfoConnect
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2d2251">
 
-<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
-  <button class="w3-bar-item w3-button w3-large"
-  onclick="w3_close()" ><b>Close </b> <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></button>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-</div>
 
-<div zclass="w3-main" id="main">
+  <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.ico">
+<!--   <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()" id="abc">&#9776;</button>
-  <div class="w3-container">
-    <h1>Accounting</h1>
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53104159-5', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+
+
+
+
+
+
+
+  
+
+
+  <div class="overlay-dark">
+    <div class="cross-mobile"><i class="fa fa-times"></i></div>
   </div>
-</div>
+  <div class="left-nav left-index-bg">
+    <div class="index-overlay">
+    </div>
+    
+     
+
+    <div class="left-nav-inner left-nav-inner-index">
+      <ul>
+        <li class="active index-list">
+          <a href="/"><i class="fa fa-home"></i> &nbsp;Home</a>
+        </li>
+        <li class="index-list">
+          <a href="/notices/"><i class="fa fa-thumb-tack"></i> &nbsp;All notices</a>
+        </li>
+        <!-- <li>
+          <a class="search2"><i class="fa fa-search"></i> &nbsp;Search</a>
+        </li> -->
+        <li class=" index-list"><a href="/about/" >
+          <i class="fa fa-newspaper-o"></i> &nbsp;About</a>
+        </li>
+          <li class=" index-list">
+            <a href="/contact/">
+            <i class="fa fa-phone"></i> &nbsp;Contact</a>
+          </li>
+          <li class="">
+            <a href="http://jssaten.ac.in" target="_blank">
+            <i class="fa fa-globe"></i> &nbsp;JSS Website</a>
+          </li>
+          
+          <li class="index-list">
+            <a href="/accounts/login/">
+            <i class="fa fa-sign-out"></i> &nbsp;LogIn</a>
+          </li>
+          
+          <div class="line"></div>
+          <li class=" index-list">
+            <a href="/">
+            <i class=""></i> &nbsp; MOOCs</a>
+          </li>
+          <li class=" index-list">
+            <a href="http://nptel.ac.in">
+            <i class="fa fa-external-link"></i> &nbsp; NPTEL </a>
+          </li>
+          <li class=" index-list">
+            <a href="http://www.sakshat.ac.in">
+            <i class="fa fa-external-link"></i> &nbsp; SAKSHAT </a>
+          </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+    
 
 
-
-<div class="w3-container">
-<p>Accounting or accountancy is the measurement, processing and communication of financial information about economic entities[1][2] such as businesses and corporations. The modern field was established by the Italian mathematician Luca Pacioli in 1494.[3] Accounting, which has been called the "language of business",[4] measures the results of an organization's economic activities and conveys this information to a variety of users, including investors, creditors, management, and regulators.[5] Practitioners of accounting are known as accountants. The terms "accounting" and "financial reporting" are often used as synonyms.
-
-Accounting can be divided into several fields including financial accounting, management accounting, external auditing, tax accounting and cost accounting.[6] Accounting information systems are designed to support accounting functions and related activities. Financial accounting focuses on the reporting of an organization's financial information, including the preparation of financial statements, to external users of the information, such as investors, regulators and suppliers;[7] and management accounting focuses on the measurement, analysis and reporting of information for internal use by management.[1][7] The recording of financial transactions, so that summaries of the financials may be presented in financial reports, is known as bookkeeping, of which double-entry bookkeeping is the most common system.[8]</p>
-</div>
-
-</div>
-
-<script>
-function w3_open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
-
-}
-function w3_close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
-}
-</script>
+<script src="js/jquery.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
+
+<script src="js/main.js"></script>
+
+
 </body>
+
 </html>
